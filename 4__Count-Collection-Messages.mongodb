@@ -1,0 +1,5 @@
+// MongoDB Playground
+// Select the database to use.
+const database = 'eCommerce';
+use(database);
+db.Messages.countDocuments();

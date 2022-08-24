@@ -1,0 +1,8 @@
+// MongoDB Playground
+const database = 'eCommerce';
+use(database);
+// Insert a few documents into the sales collection.
+db.Products.insertMany([
+  { '__id': 11,'timestamp':new Date('2021-08-19T08:00:00Z'),'tipo':'Insecto', 'name': 'Metapod N.º011',   'description': 'Como en este estado solo puede endurecer su coraza, permanece inmóvil a la espera de evolucionar.', 'code': '11fa3dd3-7c95-4e7f-a90f-ba3a32e3473d', 'thumbnail': 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png', 'price': 180,  'stock': 93   },
+]);
+db.Products.find()
